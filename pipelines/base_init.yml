@@ -2,14 +2,14 @@ resources:
   - name: demo_gitRepo
     type: GitRepo
     configuration:
-      path: shimib/Hoare
+      path: chanti529/Hoare
       gitProvider: GitHub
       branches:
         include: master        
   - name: gitRepo_code
     type: GitRepo
     configuration:
-      path: shimib/project-examples
+      path: chanti529/project-examples
       gitProvider: GitHub
       branches:
         include: eplus-v2-orbitera
