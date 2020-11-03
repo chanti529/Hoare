@@ -109,8 +109,9 @@ pipelines:
             - mkdir -p npm_results
             - popd
             - export domain=$(echo ${int_Artifactory_url} | awk -F[/:] '{print $4}' )
-            - export Fullimagename="${domain}/docker-demo/npm-app"
-
+            #Temporarily modifying Docker registry path to align with Free Tier Sub-domain method
+            #- export Fullimagename="${domain}/docker-demo/npm-app"
+            - export Fullimagename="gowtham-docker-demo.jfrog.io/npm-app"
           onSuccess:
             - echo "Congrats The Docker image was build"
 
